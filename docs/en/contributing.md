@@ -32,10 +32,14 @@ Editing our docs this way will still take a similar approach as in option 1 howe
 2. Fork the project into your own GitHub account.
 3. Clone the project locally.
 4. Setup Material for MkDocs according to their guide [here](https://squidfunk.github.io/mkdocs-material/getting-started/)
-5. Run `mkdocs serve` to start the live-reloading docs server from where you cloned the fork to.
-6. Make the changes that you see fit.
-7. Commit your changes to your fork.
-8. Raise a pull request against our repository [here](https://github.com/BeamMP/Docs).
+5. Install dependencies by running `pip install mkdocs-material mkdocs-git-revision-date-localized-plugin "mkdocs-material[imaging]"`
+
+    5.1. If you are using windows you will also need to manually install cairocffi. This is done by running `pip install pipwin` and then run `pipwin install cairocffi`
+    
+6. Run `mkdocs serve` to start the live-reloading docs server from where you cloned the fork to.
+7. Make the changes that you see fit.
+8. Commit your changes to your fork.
+9. Raise a pull request against our repository [here](https://github.com/BeamMP/Docs).
 
 
 ## Project layout
